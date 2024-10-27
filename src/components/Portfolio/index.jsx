@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './main.css';
 
 const Portfolio = () => {
@@ -28,14 +29,21 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <motion.div
+            className="project-card"
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileHover={{ scale: 1.05 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+          >
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-links">
               <a href={project.liveLink} target="_blank" rel="noopener noreferrer">View Project</a>
               <a href={project.codeLink} target="_blank" rel="noopener noreferrer">View Code</a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
