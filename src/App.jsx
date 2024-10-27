@@ -1,15 +1,23 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
 
 const App = () => {
-
   return (
-    <>
-       
-      <h1>Dunia</h1>
-      <h2>Hello</h2>
-   
-    </>
-  )
+    <div className="App">
+      <Navbar />
+      <main>
+        <About />
+        <Portfolio />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

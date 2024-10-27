@@ -1,0 +1,41 @@
+.contact-section {
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  color: #bb86fc;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.contact-section a {
+  color: #bb86fc;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-section a:hover {
+  color: #9d70d4;
+  transform: scale(1.05);
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+  }
+}
