@@ -5,20 +5,20 @@ import './main.css';
 const Portfolio = () => {
   const projects = [
     {
-      title: "Project One",
+      title: "Task Manager",
       description: "A responsive web application that helps users manage their tasks efficiently.",
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "https://listtaskmanager.netlify.app/",
+      codeLink: "https://github.com/DuniaGoncalves/task-manager",
     },
     {
-      title: "Project Two",
-      description: "An interactive e-commerce platform featuring a custom-built shopping cart and checkout.",
-      liveLink: "#",
-      codeLink: "#",
-    },
-    {
-      title: "Project Three",
+      title: "Decor & Rentals",
       description: "A portfolio website with dynamic animations, showcasing my design and coding skills.",
+      liveLink: "https://decorandrentals.netlify.app/",
+      codeLink: "https://github.com/DuniaGoncalves/decor-rentals-site",
+    },
+    {
+      title: "Ecommerce Site",
+      description: "IN PROGRESS: An interactive e-commerce platform featuring a custom-built shopping cart and checkout.",
       liveLink: "#",
       codeLink: "#",
     },
